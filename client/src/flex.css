@@ -1,0 +1,37 @@
+.vbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_end {
+  justify-content: end;
+}
+
+.fill {
+  flex: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_window .window_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row_window .window_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.no_padding_window .window_content {
+  padding: 0;
+}

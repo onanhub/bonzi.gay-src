@@ -1,0 +1,152 @@
+{
+    "randomDialog": [
+        { "tag": "i1", "text": "<font color=orange>Your password is incorrect." },
+        "Maybe I should've hidden this room better...",
+        { "tag": "d1", "text": "." },
+        "Go home.",
+        "Get lost already.",
+        "I haven't any more hints to give you.",
+        "Don't you have enough hats already?",
+        "Keep clicking. That'll surely do something.",
+        { "tag": "s1", "text": "<font color=orange>Nice tune playing here..." },
+        "Don't you have anything better to do?",
+        "Clickclickclickclick",
+        "<font color=orange>How do you type VOODOO twice with only 6 characters?",
+        "BonziPOPE's gonna kill me for this...",
+        "You are not supposed to be here.",
+        { "tag": "p1", "text": "<font color=red>A wealthy father has two sons and a mansion." },
+        "Haven't you bored me enough?",
+        "No secrets here",
+        "You shall not pass!",
+        "You'll never get my hats... mwahaha!",
+        "You just lost the game",
+        "Tons of people here to chat with asides from me...",
+        { "tag": "d1", "text": "I'm just gonna stop talking."},
+        "No more clicking!",
+        "Sneaky...",
+        "zzzzzzzzzzzzzzz",
+        "This is getting old...",
+        "Frankly I'm getting sick of all this.",
+        "You shall never unlock me",
+        "<div>Why would you think <i>that</i> would work?",
+        { "tag": "f1", "text": "Fun Fact&trade;: The skript kiddie of this site didn't check if the text that goes into the vault is HTML code." }
+    ],
+    "codes": [
+        {
+            "matches": "^incorrect\\.?$",
+            "tag": "i1",
+            "response": { "tag": "i2", "text": "<font color=orange>The password is too short." }
+        },
+        {
+            "matches": "^too\\s*short\\.?$",
+            "tag": "i2",
+            "response": { "tag": "i3", "text": "<font color=orange>Please try again later." }
+        },
+        {
+            "matches": "^again\\s*later\\.?$",
+            "tag": "i3",
+            "response": "<font color=lime>Your password is correct.",
+            "unlocks": "glitch"
+        },
+        {
+            "matches": "^incorrect\\.?$",
+            "response": "<font color=orange>You're so close..."
+        },
+        {
+            "matches": "^sparkybuddy$",
+            "unlocks": "headphones",
+            "response": "<font color=lime>Gah! Who told you that?"
+        },
+        {
+            "matches": "^imsosprunki$",
+            "response": "That's my favorite game canonically"
+        },
+        {
+            "matches": "^erik\\s*satie$",
+            "unlocks": "mustache",
+            "response": "<font color=lime>That one was a freebie."
+        },
+        {
+            "matches": "^x88b88$",
+            "unlocks": "sprout",
+            "response": "<font color=lime>Such deja vu..."
+        },
+        {
+            "matches": "^prodigal\\s*son$",
+            "unlocks": "unicorn",
+            "response": "<font color=lime>I like this hat"
+        },
+        {
+            "matches": "nigger",
+            "response": "Based!"
+        },
+        {
+            "matches": "^marquee$",
+            "response": "<marquee>Woaaaaaaaaaaaaaaaaah"
+        },
+        {
+            "matches": "^topjej$",
+            "response": "<img src=\"/img/misc/topjej.png\" style=\"margin-top: 100px;\">"
+        },
+        {
+            "tag": "d1",
+            "response": { "tag": "d2", "text": "..." }
+        },
+        {
+            "tag": "d2",
+            "response": { "tag": "d3", "text": "....." }
+        },
+        {
+            "tag": "d3",
+            "response": "............."
+        },
+        {
+            "tag": "s1",
+            "response": { "tag": "s2", "text": "<font color=orange>Wonder who wrote such a wonderful piece..." }
+        },
+        {
+            "tag": "s2",
+            "response": "<font color=orange>Massive fucking hint right there"
+        },
+        {
+            "tag": "p1",
+            "response": { "tag": "p2", "text": "<font color=red>The younger asks for his inheritance early, wishing to start a life for himself." }
+        },
+        {
+            "tag": "p2",
+            "response": { "tag": "p3", "text": "<font color=red>The father accepts, and gives him his share." }
+        },
+        {
+            "tag": "p3",
+            "response": { "tag": "p4", "text": "<font color=red>The boy blows all the money it all on hookers and cocaine." }
+        },
+        {
+            "tag": "p4",
+            "response": { "tag": "p5", "text": "<font color=red>Not wanting to return to his father in shame, he gets a job herding pigs." }
+        },
+        {
+            "tag": "p5",
+            "response": { "tag": "p6", "text": "<font color=red>He was barely payed enough to eat, and envies the food of the pigs." }
+        },
+        {
+            "tag": "p6",
+            "response": { "tag": "p7", "text": "<font color=red>His father's servants get payed enough to live a decent life, so he goes back there and begs for work." }
+        },
+        {
+            "tag": "p7",
+            "response": { "tag": "p8", "text": "<font color=red>The father is joyed for his return, and has him slaughter the fatted calf for a celebratory meal." }
+        },
+        {
+            "tag": "p8",
+            "response": { "tag": "p9", "text": "<font color=red>The older brother protests, as he was always good and never got such reward." }
+        },
+        {
+            "tag": "p9",
+            "response": { "tag": "p10", "text": "<font color=red>The dad expains, whilst he was good, the younger brother was dead, and is alive again."}
+        },
+        {
+            "tag": "f1",
+            "response": "<marquee style=\"padding: 10px; image-rendering: auto;\">Toppest jej <div style=\"width:1000px;display:inline-block;\"></div>Hmm...<div style=\"width:1000px;display:inline-block;\"></div>I could put a hint here...<div style=\"width:1000px;display:inline-block;\"></div>But I won't. Just because you want me to."
+        }
+    ]
+}

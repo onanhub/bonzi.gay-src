@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BonziWORLD README</title>
+
+	<meta content="">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="mobile-web-app-capable" content="yes" />
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="./readme.css">
+</head>
+
+<body>
+	<div id="content">
+		<p><img src="./img/readme/logo.png" alt="BonziWORLD logo. I may have taken &quot;inspiration&quot; from WinXP.">
+		</p>
+		<h1 id="bonziworld">BonziWORLD</h1>
+		<h6 id="leading-the-industry-in-gorilla-based-chat-clients">Leading the industry in gorilla-based chat clients.
+		</h6>
+		<h2 id="what-the-hell-is-this">What the hell is this?</h2>
+		<p>BonziWORLD is a node.js and socket.io based chat client featuring everyone&#39;s most <del>hated</del> loved
+			purple gorilla. The client also uses speak.js to provide text-to-speech voices. Not exactly the original
+			BonziBUDDY voice, but hey, it works.</p>
+		<p>This website is a parody of BonziBUDDY and has no affiliation to it.</p>
+		<h2 id="how-do-i-use-it">How do I use it?</h2>
+		<ol>
+			<li>Enter a nickname (under 25 characters). If you don&#39;t enter one, you&#39;ll be named
+				&quot;Anonymous&quot;. (we r legion du nut 4 get)</li>
+			<li>Optionally, enter a room ID. If you want to join someone else, their room ID will be in the bottom-right
+				corner of the screen.<ul>
+					<li>If you enter a room ID that doesn&#39;t exist, you will be placed in a private room which can
+						only be joined by people you share the ID with.</li>
+				</ul>
+			</li>
+			<li>Be a BonziBUDDY.</li>
+		</ol>
+		<!--
+		<h2 id="what-s-new-about-this">What&#39;s new about this?</h2>
+		<ul>
+			<li>The chat logger is better and you can now reply to messages.
+				<ul>
+					<li>You can also resize it. Huge, I know.</li>
+					<li>You can clear the chat with <code>/clear</code>.</li>
+				</ul>
+			</li>
+			<li>You can spoiler text with <code>||</code> and code-format text with <code>``</code>.</li>
+			<li>You can mute other people. (This literally wasn&#39;t an option before)<ul>
+					<li>You can middle click on people to mute them.</li>
+				</ul>
+			</li>
+			<li><gay-rainbow>Rainbow text looks considerably cooler now.</gay-rainbow></li>
+			<li><code>/poll</code> is no longer an admin-only command.</li>
+		</ul>
+		<p>That&#39;s the jist of it, barring some stupid shit</p>
+		-->
+		<h2 id="what-are-the-chat-commands">What are the chat commands?</h2>
+		<p>If you see any brackets, they indicate a placeholder. Don&#39;t type them in.</p>
+		<ul>
+			<li><code>/name [name]</code> - Change your name.<ul>
+					<li>There is a 25 character limit on names.</li>
+				</ul>
+			</li>
+			<li><code>/speed [speed]</code> - Change your voice&#39;s speed.<ul>
+					<li>Max value is 275, min value is 125.</li>
+				</ul>
+			</li>
+			<li><code>/pitch [pitch]</code> - Change your voice&#39;s pitch.<ul>
+					<li>Max value is 125, min value is 15.</li>
+				</ul>
+			</li>
+			<li><code>/color [color]</code> - Change your BonziBUDDY&#39;s color! The ones available are:<ul>
+					<li>red</li>
+					<li>brown</li>
+					<li>green</li>
+					<li>blue</li>
+					<li>purple</li>
+					<li>black</li>
+					<li>cyan</li>
+					<li>yellow</li>
+					<li>pink</li>
+					<li>white</li>
+					<li>If you don&#39;t type a color, you will be given one at random.</li>
+				</ul>
+			</li>
+			<li>
+				<code>/hat [hat]</code> - Change your BonziBUDDY's hat.
+				<ul>
+					<li> bucket
+					<li> pot
+					<li> chain
+					<li> troll
+					<li> wizard
+					<li> kamala
+					<li> maga
+					<li> evil
+					<li> bfdi
+					<li> elon
+					<li> tophat
+					<li> witch
+					<li> horse
+					<li> bieber
+					<li> obama
+					<li> bowtie
+					<li> ushanka
+					<li> chef
+					<li> epic
+					<li> bush
+					<li> As with color, don't type a hat to get a random one.
+				</ul>
+			</li>
+			<li><code>/joke</code> - Tell a horribly written joke.</li>
+			<li><code>/fact</code> - Tell a horribly written &quot;fact&quot;.</li>
+			<li><code>/backflip</code> - Do a backflip.<ul>
+					<li>Do &#39;/backflip swag&#39; for extra swag.</li>
+				</ul>
+			</li>
+			<!--<li><code>/youtube [video ID]</code> - Play a YouTube video.<ul>
+					<li>Alternatively, you can simply paste the URL in chat and it will automatically play it.</li>
+				</ul>
+			</li>-->
+			<li><code>/asshole [name]</code> - Call someone an asshole.<ul>
+					<li>Don&#39;t ask why I implemented this. There&#39;s no answer.</li>
+					<li>You can also right click on people to do the same thing.</li>
+				</ul>
+			</li>
+			<!--<li><code>/bass [name]</code> - Call someone a bass.<ul>
+					<li>Shoutout to BonziWORLD Revived.</li>
+					<li>If you ever see a person named &quot;fuG&quot;, make sure to call them a bass.</li>
+				</ul>
+			</li>-->
+			<li><code>/owo [name]</code> - owo, wat dis?<ul>
+					<li>kill me</li>
+					<li>Works pretty much the same as /asshole, right click and all.</li>
+				</ul>
+			</li>
+			<li><code>/triggered</code> - The best copypasta.</li>
+			<li><code>/linux</code> - I&#39;d just like to interject for a moment.</li>
+			<li><code>/pawn</code> - Hi, my name is BonziBUDDY, and this is my website.</li>
+			<li><code>/vaporwave</code> - ＡＥＳＴＨＥＴＩＣ</li>
+			<li><code>/unvaporwave</code> - ＡＥＳＴＨＥＴＩＣ ＩＳ ＫＩＬＬ</li>
+			<!--<li><code>/image [url]</code> - Links an image. Currently, this must be done with a whitelisted site:
+				<ul>
+					<li><a href="https://catbox.moe/">catbox.moe</a></li>
+					<li><a href="https://bonzi.gay/">bonzi.gay</a></li>
+				</ul>
+			</li>
+			<li><code>/video [url]</code> - Links a catbox video.</li>-->
+			<li><code>/clear</code> - Clear the chat log.</li>
+			<li><code>/poll [question]</code> - Create a poll.</li>
+			<li><code>/settings</code> - Opens a settings window.</li>
+		</ul>
+		<h2 id="markdown">Markdown</h2>
+		<p>Text can have markup tags around them to style them.</p>
+		<ul>
+			<li><code>**</code>: <strong>Bold</strong>
+			<li><code>~~</code>: <em>Italics</em>
+			<li><code>__</code>: <u>Underline</u>
+			<li><code>--</code>: <del>Strikethrough</del>
+			<li><code>^^</code>: <gay-big>Big</gay-big>
+			<li><code>$r$</code>: <gay-rainbow>Rainbow</gay-rainbow>
+			<li><code>||</code>: <gay-spoiler onclick="this.classList.add('reveal')">Spoilers</gay-spoiler>
+			<li><code>``</code>: <gay-code>Code</gay-code>
+			<li><code>%%</code>: <marquee style="display: inline-block" width="50">Marquee</marquee>
+		</ul>
+		<h2 id="are-there-any-rules">Are there any rules?</h2>
+		<p>Obviously no illegal shit. On top of that, there are a few limitations:</p>
+		<ul>
+			<li>All strings are sanitized to get rid of any malicious HTML/JS/CSS. <em>Don&#39;t even try it
+					motherfucker.</em></li>
+			<li>There is a 2500 character limit in public rooms and a 5000 limit in private rooms.<ul>
+					<li>Yes, the Navy Seals copypasta fits.</li>
+				</ul>
+			</li>
+			<li>There is a 25 character limit on names.</li>
+		</ul> 
+		<p>There is a mod team on this site who hand out temp bans to people who are too insufferable. No rules are written yet but please don't talk about shit nobody wants to hear about.</p>
+
+	</div>
+
+	<div id="titlebar">
+		<div id="minimize"></div>
+		<div id="maximize"></div>
+		<div id="close"></div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <atom:link href="https://www.bonzi.gay/changelog.rss" rel="self" type="application/rss+xml" />
+        <title>BonziWORLD Changelog</title>
+        <link>https://www.bonzi.gay/changelog.html</link>
+        <image>
+            <url>http://www.bonzi.gay/img/readme/logo.png</url>
+            <title>BonziWORLD logo</title>
+            <link>https://www.bonzi.gay</link>
+        </image>
+        <description>The changelog for BonziWORLD.</description>
+        <language>en-us</language>
+
+        <item>
+            <title>RSS feed discontinued</title>
+            <guid isPermaLink="false">1.6.0</guid>
+            <description>I'm not updating this feed anymore because nobody's using it. I've been manually updating the RSS feed because I don't have a proper aggregator. The RSS icon will remain on the changelog for the aesthetic.</description>
+        </item>
+
+        <item>
+            <title>Update 1.4.0 released</title>
+            <guid isPermaLink="false">1.4.0</guid>
+            <description>
+<![CDATA[<ul>
+<li>Mods can now useredit and nuke users</li>
+<li>User count is shown in the corner of the room</li>
+<li>Added tags. These can only be given by admins.</li>
+<li>Fixed rainbow animation randomly resetting</li>
+<li>Fixed topjej in /fact</li>
+<li>Fixed Automatic rejoining instantly disconnecting</li>
+<li>Added /hat bowtie. Thanks for nas mech for the hat.</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.3.4 released</title>
+            <guid isPermaLink="false">1.3.4</guid>
+            <pubDate>Fri, 13 Jun 2025 23:13:36 +0000</pubDate>
+            <description>
+<![CDATA[<ul>
+<li>Add /vaporwave and /unvaporwave</li>
+<li>Fixed right-click showing the wrong context menu in chat bubbles</li>
+<li>Fix bug where you could be silently disconnected (!)</li>
+<li>Fixed the logo being misaligned on mobile. Thanks to Ahmad for the fix.</li>
+<li>Added /hat horse</li>
+<li>Added the "bear" hat for blessed</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.3.3 released</title>
+            <guid isPermaLink="false">1.3.3</guid>
+            <pubDate>Mon, 02 Jun 2025 23:13:36 +0000</pubDate>
+            <description>
+<![CDATA[<ul>
+<li>Added admins</li>
+<li>Fixed ban reason not showing up</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.3.2 released</title>
+            <guid isPermaLink="false">1.3.2</guid> 
+            <pubDate>Thu, 22 May 2025 23:13:36 +0000</pubDate>
+            <description>
+<![CDATA[<ul>
+<li>Fixed /pawn, /linux, and /triggered. Thanks to donutscout for reporting this</li>
+<li>Whitelisted the domains bonzi.gay, imgbb.co, and imgur.com for /image</li>
+<li>YouTube videos no longer autoplay</li>
+<li>A popup which explaining blessed appears when you get blessed</li>
+<li>Blessed users can now multihat. The /hat command can be used with at most 3 hats at a time, such as <code>/hat tophat dank bfdi</code></li>
+<li>Added the blessed exclusive hats /hat cigar and /hat illuminati </li>
+<li>Added skins for blessed users. Current ones are /glow and /noob
+<ul>
+<li>Thanks to Red Yellow for the noob skin</li>
+</ul>
+</li>
+<li>All blessed features are available to everyone in private rooms</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.3.1 released</title>
+            <guid isPermaLink="false">1.3.1</guid>
+            <pubDate>Sun, 04 May 2025 02:02:34 +0000</pubDate>
+            <description>
+<![CDATA[This is just optimization
+<ul>
+    <li>The BonziBUDDY spritesheets no longer use unused sprites, see <a href="https://bonzi.gay/img/bonzi/purple.webp">purple</a></li>
+    <li>Profile pictures handled better now</li>
+    <li>You can now join before all assets finish loading</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.3.0 released</title>
+            <guid isPermaLink="false">1.3.0</guid>
+            <pubDate>Mon, 28 Apr 2025 04:57:41 +0000</pubDate>
+            <description>
+<![CDATA[<ul>
+    <li>Added timestamps to messages in the chat log</li>
+    <li>Added /hat witch</li>
+    <li>Added /hat wizard</li>
+    <li>Added /color white</li>
+    <li>Added "blessed", a VIP-like status.
+        <ul>
+            <li>Use /angel to turn back into an angel.</li>
+            <li>Use /dank for the exclusive blessed hat</li>
+        </ul>
+    </li>
+    <!--<li>Added /french [TEXT], which makes your TTS french.</li>-->
+    <li>Added /video</li>
+    <li>Fixed ridicolously long names</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.2.2 released</title>
+            <guid isPermaLink="false">1.2.2</guid>
+            <pubDate>Mon, 21 Apr 2025 01:17:05 +0000</pubDate>
+            <description>
+<![CDATA[<ul>
+    <li>Adding exporting and importing to /settings</li>
+    <li>Blacklist just uses a text field now</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.2.1 released</title>
+            <guid isPermaLink="false">1.2.1</guid>
+            <pubDate>Mon, 14 Apr 2025 03:31:33 +0000</pubDate>
+            <description>
+<![CDATA[Thanks to @david_egan_bia for reporting this.
+<ul>
+    <li>Chat logger doesn't lag the site anymore.</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.2.0 released</title>
+            <guid isPermaLink="false">1.2.0</guid>
+            <pubDate>Sun, 13 Apr 2025 14:08:55 +0000</pubDate>
+            <description>
+<![CDATA[<ul>
+    <li>Join and leave messages</li>
+    <li>/settings command. Options include:
+        <ul>
+            <li>Images can be hidden until clicked</li>
+            <li>Words can be blacklisted</li>
+            <li>Classic background</li>
+        </ul>
+    </li>
+    <li><span style="color: #789922">&gt;add greentext</span></li>
+    <li>Polls now get pronounced</li>
+    <li>Touchscreen dragging is less janky</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.1.1 released</title>
+            <guid isPermaLink="false">1.1.1</guid>
+            <pubDate>Tue, 01 Apr 2025 22:21:11 +0000</pubDate>
+            <description>
+<![CDATA[Patch to add the new colors from ziggymoncher
+<ul>
+    <li>Added /color pink</li>
+    <li>Updated /color cyan and yellow</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.1.0 released</title>
+            <guid isPermaLink="false">1.1.0</guid>
+            <pubDate>Tue, 01 Apr 2025 11:31:21 +0000</pubDate>
+            <description>
+<![CDATA[Small little update. This should hopefully make it feel 10x less janky for now
+<ul>
+    <li>Added changelog</li>
+    <li>Fixed stray pixels appearing in certain hats</li>
+    <li>Images no longer break chat log scrolling</li>
+    <li>Added /color cyan and /color yellow</li>
+    <li>Added /hat tophat</li>
+    <li>Fixed automatic rejoining</li>
+    <li>Added /bass to right click</li>
+    <li>URLS will be automatically linked.</li>
+    <li>You can use \n in a message to create a newline.</li>
+</ul>]]>
+            </description>
+        </item>
+
+        <item>
+            <title>Update 1.0.1 released</title>
+            <guid isPermaLink="false">1.0.1</guid>
+            <pubDate>Tue, 01 Apr 2025 11:31:20 +0000</pubDate>
+            <description>
+<![CDATA[Shoutout to THLPLE for this one
+<ul>
+    <li>Added automatic rejoining</li>
+</ul>]]>
+            </description>
+        </item>
+    </channel>
+</rss>

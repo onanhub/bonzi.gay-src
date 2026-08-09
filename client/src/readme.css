@@ -1,0 +1,131 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body,
+body * {
+    font-family: "Tahoma", sans-serif;
+}
+
+input[type="text"] {
+    background-color: #fff;
+    border: 1px inset #AAA;
+    color: #000;
+}
+
+.xp_bubble,
+#content {
+    position: relative;
+    background: #ffffe1;
+    color: #000;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    border: #000000 solid 1px;
+}
+
+#rss {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url("font/Tahoma/Tahoma.eot#iefix") format("embedded-opentype"), url("font/Tahoma/Tahoma.woff") format("woff"), url("font/Tahoma/Tahoma.ttf") format("truetype"), url("font/Tahoma/Tahoma.svg#Tahoma") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    overflow-y: auto;
+}
+
+body {
+    background-color: #6d33a0;
+    background-image: url("img/desktop/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content {
+    width: 75%;
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 16px 32px;
+    background-color: rgba(255, 255, 225, 0.8);
+    overflow: hidden;
+}
+
+#bonziworld {
+    display: none;
+}
+
+#titlebar {
+    background-color: rgba(109, 51, 160, 0.85);
+}
+
+gay-big {
+    font-size: 1.5em;
+}
+
+gay-spoiler {
+    background-color: darkslategrey;
+    border-radius: 3px;
+    color: transparent;
+    user-select: none;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+gay-spoiler:hover {
+    background-color: #777;
+}
+
+gay-spoiler.reveal {
+    background-color: #5555;
+    color: black;
+    user-select: all;
+    cursor: auto;
+}
+
+gay-rainbow {
+    background-image: linear-gradient(120deg in hsl longer hue, red, red, red);
+    background-size: 500px;
+    background-clip: text;
+    color: transparent;
+    animation: move 2s linear infinite;
+}
+
+gay-code {
+    border: 1px solid #bbb;
+    background-color: #ddd;
+    border-radius: 4px;
+    font: monospace;
+    padding: 0 0.2em;
+}
+
+@keyframes move {
+    from {
+        background-position-x: 500px;
+    }
+    to {
+        background-position-x: 0;
+    }
+}
+
+figure {
+    float: right;
+    border: 1px solid #555555;
+    margin: 0;
+    padding: 3px;
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: #555555;
+}

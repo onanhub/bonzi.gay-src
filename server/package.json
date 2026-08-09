@@ -1,0 +1,29 @@
+{
+	"name": "bonziworld_server",
+	"version": "1.6.2",
+	"description": "Server for the BonziWORLD chat client.",
+	"main": "index.ts",
+	"author": "Joseph Judge",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"dependencies": {
+		"better-sqlite3": "^12.2.0",
+		"express": "^4.16.4",
+		"pg": "^8.16.3",
+		"sharp": "^0.34.5",
+		"socket.io": "^2.2.0",
+		"zod": "^4.3.6"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@types/cookie-parser": "^1.4.10",
+		"@types/express": "^5.0.6",
+		"@types/node": "^25.6.0",
+		"@types/pg": "^8.20.0",
+		"@types/socket.io": "^2.1.13",
+		"eslint": "^10.2.0",
+		"typescript": "^6.0.2",
+		"typescript-eslint": "^8.58.2"
+	}
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BonziWORLD Changelog</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="mobile-web-app-capable" content="yes" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="./readme.css">
+</head>
+
+<body>
+	<div id="content">
+		<a id="rss" href="changelog.rss">
+			<img src="img/misc/rss.png" width="16" height="16" alt="RSS Icon">
+		</a>
+
+		<p><img src="./img/readme/logo.png" alt="BonziWORLD logo. I may have taken &quot;inspiration&quot; from WinXP.">
+		</p>
+		<h2>BonziWORLD Changelog</h2>
+
+		<h3>1.6.4</h3>
+		<ul>
+			<li>Replaced the white color with gray because white looked ugly IMO.</li>
+			<li>Mods can now use /announce to give everyone an alert</li>
+			<li>Fixed a bug where Sinhala text would crash the new TTS.</li>
+			<li>Fixed a bug where "&lt;" gets pronounced as "and lt".</li>
+			<li>Fixed a bug where the 502 error page actually responded with 200 which let them be cached. Blame nginx for this</li>
+			<li>Fixed a bug where you can nest the big text markdown</li>
+			<li>Refactored the entire server code to be less messy so I can get contributors on here. If this breaks something let me know</li>
+		</ul>
+
+		<h3>1.6.3</h3>
+		The button event has ended! The last presser was "Animal Crossing Lover". Fun stats:
+		<ul>
+			<li>295 people clicked the button 1287 times.</li>
+			<li>
+				Hat breakdown:
+				<ul>
+					<li>279 green hats</li>
+					<li>93 purple hats</li>
+					<li>49 red hats</li>
+					<li>23 yellow hats</li>
+					<li>8 white hats</li>
+					<li>5 blue hats</li>
+				</ul>
+			</li>
+		</ul>
+		Fun event but next time I'm doing an event it'll be less stressful and fuck-upable.
+
+		<h3>1.6.2</h3>
+		<ul>
+			<li>Added THE BUTTON. There is a 1 hour global timer which pressing resets. You only have 6 presses. There are 6 hats you get for pressing at certian times, and a Golden Hat for being the last presser. Good luck!</li>
+		</ul>
+
+		<h3>1.6.1</h3>
+		<ul>
+			<li>Fixed a bug where the word blacklist didn't show up. Thanks to ItzSticky for reporting this.</li>
+		</ul>
+
+		<h3>1.6.0</h3>
+		<ul>
+			<!--<li>Images will dissapear after 10 seconds.</li>
+			<li>Fixed a bug in the image uploader where you click the upload button multiple times before it disappears.</li>-->
+			<li>Polls will dissapear after not getting votes for 30 seconds.</li>
+			<li>Polls now work with lipsync.</li>
+			<li>Inactive users are now kicked out after 10 minutes. If you want to lurk just occasionally do (typing).</li>
+			<li>Windows are now resizable.</li>
+			<li>Windows now layer correctly.</li>
+			<li>Settings now have categories.</li>
+			<li>Added custom CSS to the settings.</li>
+			<li>Added /hat bush.</li>
+			<li>Added /hat clown. Thanks to ItzPPGKosemol for making this hat.</li>
+			<li>Added exclusive hat silverchain. Thanks to Scrabby for this hat.</li>
+			<li>Removed /bass after Seamus slandered this site despite all the weird stuff in her GC</li>
+			<li>Fixed a bug where kicked users could show up as "ghost" users until you rejoin.</li>
+			<li>Added High Kings</li>
+		</ul>
+		
+		<h3>1.5.1</h3>
+		<ul>
+			<li>Removed /image until I get the anti-NSFW filter up.</li>
+		</ul>
+
+		<h3>1.5.0 - The Massive Update</h3>
+		<ul>
+			<li>Added a start menu:
+				<ul>
+					<li>Click the avatar to change your BonziBUDDY with a window.</li>
+					<li>Has settings</li>
+					<li>Open the Poll Creator to make a poll of up to 4 options, each with custom colors and names.</li>
+					<li>Open the Image Uploader to upload an image or video.</li>
+					<li>Added The Vault. You can find 5 new secret hats here.
+						<ul>
+							<li>Thanks to jim megatron for making the glitch hat.</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Paste an image to post it.</li>
+			<li>TTS reverted to the old espeak one (new one sounds off). [[]] removed.</li>
+			<li>Bonzis are now lipsynced.</li>
+			<li>/youtube has been removed. To make lipsyncing work I had to turn use
+				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer#security_requirements">SharedArrayBuffer</a>,
+				which doesn't work with embedded content. I like lipsyncing better than /youtube, so oh well.
+			</li>
+			<li>Added %%marquee%% markup.</li>
+		</ul>
+
+		<h3>1.4.13</h3>
+		Added some mod exclusive hats:
+		<ul>
+			<li>redcrown - thanks jim megatron!</li>
+			<li>diamondchain - thanks jim!</li>
+			<li>headphones2 - thanks mailbox!</li>
+			<li>scarf2 - thanks jim!</li>
+		</ul>
+
+		<h3>1.4.12</h3>
+		Christmas update! These hats are available to everyone until Dec 25th:
+		<ul>
+			<li>santa</li>
+			<li>elf</li>
+			<li>rudolph</li>
+			<li>decorated</li>
+		</ul>
+		After this, they are bless only.
+		On top of that, there's new non-christmas hats:
+		<ul>
+			<li>/hat epic - Thanks to ItzSticky for this one. </li>
+			<li>/hat party</li>
+			<li>/color orange - Thanks to <font color=green>&gt;The Atomic Wedgie&lt;</font> for this one.</li>
+		</ul>
+
+
+		<h3>1.4.11</h3>
+		<ul>
+			<li>Joining a room with a null character no longer crashes BonziWORLD. Thanks to IdealBEHH for reporting this.</li>
+		</ul>
+
+		<h3>1.4.10</h3>
+		Only for a bugfix
+		<ul>
+			<li>Added a "gold" skin for blessed users. Thanks to Jim Megatron for making this skin.</li>
+			<li>New hats
+				<ul>
+					<li>chef. Thanks to Jim Megatron for making this hat.</li>
+					<li>ushanka</li>
+				</ul>
+			</li>
+			<li>Admins multihat limit is now 10.</li>
+			<li>Fixed a bypass with the image blacklist</li>
+		</ul>
+
+		<h3>1.4.9</h3>
+		Halloween update. These hats are available to everyone until Nov 1st:
+		<ul>
+			<li>pumpkin</li>
+			<li>frankenstein</li>
+			<li>cauldron</li>
+			<li>hockey</li>
+			<li>nopupil</li>
+		</ul>
+		After this, they are bless only.
+
+		<h3>1.4.8</h3>
+		<ul>
+			<li>Name changes are now logged in the BonziLOG&trade;</li>
+			<li>Improved moderation
+				<ul>
+					<li>Moderators can now give reasons to bans. Previously we only needed "spambotting"</li>
+					<li>Lower kings can now ban up to an hour.</li>
+					<li>Moderators can now remove messages from the chat log via middle-click.</li>
+					<li>Bans will now remove all messages from the user in the logs.</li>
+					<li>Ban duration message fixed.</li>
+					<li>Moderators can use /banimg and /unbanimg.</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h3>1.4.7</h3>
+		Hotfix update
+		<ul>
+			<li>Added Hey, {NAME}! to the context menu.</li>
+			<li>Fixed /color not giving a random color.</li>
+			<li>Fixed a server crash.</li>
+		</ul>
+
+		<h3>1.4.6</h3>
+		<ul>
+			<li>Added a volume slider in /settings, defaulted at 80%.</li>
+			<li>Admins can now ban from the chat log and delete messages.</li>
+			<li>Fixed a bug where holding touch on Safari wouldn't right click.</li>
+			<li>Your username is now saved on the login page.</li>
+		</ul>
+
+		<h3>1.4.5</h3>
+		This is purely a bugfix update
+		<ul>
+			<li>Added /shuffle, moving each bonzi to a random position. Useful for when they end up all bunched.</li>
+			<!-- <li>Added a volume slider in /settings, defaulted at 80%.</li> -->
+			<li>Fixed a bug where bonzis would spawn in near the left more if the chat logger was open.</li>
+			<li>Fixed a bug where the the chat bubble could face the wrong way if the chat logger was big.</li>
+			<li>Fixed a bug where markup wouldn't be escaped in /asshole, /joke, etc</li>
+			<li>Fixed a bug where polls and quoted names would pronounce markup.</li>
+			<li>Admins are unaffected by antispam.</li>
+			<li>Character limit went from 2,500 to 1,000. Nobody used all these characters apart from being annoying.</li>
+		</ul>
+	
+		<h3>1.4.4</h3>
+		<ul>
+			<li>Added /hat chain. Thanks to nas mech for making this hat.</li>
+			<li>Added /hat pot.</li>
+			<li>Added /hat propeller for blessed users. Thanks to JY for this idea.</li>
+			<li>The TTS no longer filters out "[[". Have fun with this.
+				<ul><li>This lets you type raw phonetic input into the TTS. Originally it was filtered out because you could earrape with it, but it looks like the new espeak doesn't have this problem.</li></ul>
+			</li>
+			<li>The gravity plugin used for the secret "dolphinmode" is now lazily loaded. Turns out this was using a lot of memory while unused.</li>
+		</ul>
+		<!-- lol nope
+			<h3>1.5.0</h3>
+			<ul>
+				<li>Rewrote the sprite part of the code. This will make it faster.</li>
+				<li>Changing the bonzi's color no longer interrupts their speech.</li>
+				<li>Added /hat chain. Thanks to nas mech for making this hat.</li>
+				<li>Bowties will now spin when your bonzi smiles. Thanks to JOEL for this awesome suggestion</li>
+			</ul>
+		-->
+
+		<h3>1.4.3</h3>
+		<ul>
+			<li>The TTS is now multithreaded, talking won't cause frame drops anymore. Thanks to Ahmad for reporting this.</li>
+			<li>Fixed a race condition with the TTS that could fail to cancel a message. Thanks to donutscout for reporting this.</li>
+		</ul>
+
+		<h3>1.4.2</h3>
+		<ul>
+			<li>Rewrote the TTS, fixing site-wide TTS crashes and a common race condition where 2 bonzis talking at the same time would cancel one early. Thanks to donutscout for reporting a bug which completely stopped the TTS.</li>
+			<li>You can no longer attempt to join before connected.</li>
+		</ul>
+
+		<h3>1.4.1</h3>
+		<ul>
+			<li>Fixed a bug where BonziWORLD stops when connection temporarily goes down</li>
+		</ul>
+
+		<h3>1.4.0</h3>
+		<ul>
+			<li>Mods can now useredit and nuke users</li>
+			<li>User count is shown in the corner of the room</li>
+			<li>Added tags. These can only be given by admins.</li>
+			<li>Fixed rainbow animation randomly resetting</li>
+			<li>Fixed topjej in /fact</li>
+			<li>Fixed Automatic rejoining instantly disconnecting</li>
+			<li>Added /hat bowtie. Thanks to nas mech for the hat.</li>
+		</ul>
+
+		<h3>1.3.4</h3>
+		<ul>
+			<li>Add /vaporwave and /unvaporwave</li>
+			<li>Fixed right-click showing the wrong context menu in chat bubbles</li>
+			<li>Fix bug where you could be silently disconnected (!)</li>
+			<li>Fixed the logo being misaligned on mobile. Thanks to Ahmad for the fix.</li>
+			<li>Added /hat horse</li>
+			<li>Added the "bear" hat for blessed</li>
+		</ul>
+
+		<h3>1.3.3</h3>
+		<ul>
+			<li>Added admins</li>
+			<li>Fixed ban reason not showing up</li>
+		</ul>
+
+		<h3>1.3.2</h3>
+		<ul>
+			<li>Fixed /pawn, /linux, and /triggered. Thanks to donutscout for reporting this</li>
+			<li>Whitelisted the domains bonzi.gay, imgbb.co, and imgur.com for /image</li>
+			<li>YouTube videos no longer autoplay</li>
+			<li>A popup which explaining blessed appears when you get blessed</li>
+			<li>Blessed users can now multihat. The /hat command can be used with at most 3 hats at a time, such as <code>/hat tophat dank bfdi</code></li>
+			<li>Added the blessed exclusive hats /hat cigar and /hat illuminati </li>
+			<li>Added skins for blessed users. Current ones are /glow and /noob
+				<ul>
+					<li>Thanks to Red Yellow for the noob skin</li>
+				</ul>
+			</li>
+			<li>All blessed features are available to everyone in private rooms</li>
+		</ul>
+
+		<h3>1.3.1</h3>
+		This is just optimization
+		<ul>
+			<li>The BonziBUDDY spritesheets no longer use unused sprites, see <a href="https://bonzi.gay/img/bonzi/purple.webp">purple</a></li>
+			<li>Profile pictures handled better now</li>
+			<li>You can now join before all assets finish loading</li>
+		</ul>
+
+		<h3>1.3.0</h3>
+		<ul>
+			<li>Added timestamps to messages in the chat log</li>
+			<li>Added /hat witch</li>
+			<li>Added /hat wizard</li>
+			<li>Added /color white</li>
+			<li>Added "blessed", a VIP-like status.
+				<ul>
+					<li>Use /angel to turn back into an angel.</li>
+					<li>Use /dank for the exclusive blessed hat</li>
+				</ul>
+			</li>
+			<!--<li>Added /french [TEXT], which makes your TTS french.</li>-->
+			<li>Added /video</li>
+			<li>Fixed ridicolously long names</li>
+		</ul>
+
+		<h3>1.2.2</h3>
+		<ul>
+			<li>Adding exporting and importing to /settings</li>
+			<li>Blacklist just uses a text field now</li>
+		</ul>
+
+		<h3>1.2.1</h3>
+		<p>Thanks to @david_egan_bia for reporting this.</p>
+		<ul>
+			<li>Chat logger doesn't lag the site anymore.</li>
+		</ul>
+
+		<h3>1.2.0</h3>
+		<ul>
+			<li>Join and leave messages</li>
+			<li>/settings command. Options include:
+				<ul>
+					<li>Images can be hidden until clicked</li>
+					<li>Words can be blacklisted</li>
+					<li>Classic background</li>
+				</ul>
+			</li>
+			<li><span style="color: #789922">&gt;add greentext</span></li>
+			<li>Polls now get pronounced</li>
+			<li>Touchscreen dragging is less janky</li>
+		</ul>
+		
+		<h3>1.1.1</h3>
+		<p>Patch to add the new colors from ziggymoncher</p>
+		<ul>
+			<li>Added /color pink</li>
+			<li>Updated /color cyan and yellow</li>
+		</ul>
+
+		<h3>1.1.0</h3>
+		<p>Small little update. This should hopefully make it feel 10x less janky for now</p>
+		<ul>
+			<li>Added changelog</li>
+			<li>Fixed stray pixels appearing in certain hats</li>
+			<li>Images no longer break chat log scrolling</li>
+			<li>Added /color cyan and /color yellow</li>
+			<li>Added /hat tophat</li>
+			<li>Fixed automatic rejoining</li>
+			<li>Added /bass to right click</li>
+			<li>URLS will be automatically linked.</li>
+			<li>You can use \n in a message to create a newline.</li>
+		</ul>
+
+		<h3>1.0.1</h3>
+		<p>Shoutout to THLPLE for this one</p>
+		<ul>
+			<li>Added automatic rejoining</li>
+		</ul>
+</body>
+
+</html>

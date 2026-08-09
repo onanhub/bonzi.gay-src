@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="The gorilla-based chat app. Anonymous anarchy chat website based on BonziBUDDY.">
+	<meta name="keywords" content="BonziWORLD, BonziBUDDY, Chat, Windows XP">
+	<title>BonziWORLD</title>
+	<meta charset="utf-8">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" type="text/css" href="./flex.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="./favicons/manifest.json">
+	<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./favicons/favicon.ico">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#9370DB">
+	<meta property="og:title" content="BonziWORLD">
+	<meta property="og:description" content="The gorilla-based chat app.">
+
+	<script defer src="./lib/jquery.min.js"></script>
+	<script defer src="./lib/seedrandom.min.js"></script>
+	<script defer src="./lib/socket.io-1.4.5.js"></script>
+	<script defer src="./lib/jquery.contextMenu.min.js"></script>
+
+	<script defer src="./bonziData.js"></script>
+	<script defer src="./script.js"></script>
+
+	<style id="customStyle"></style>
+</head>
+<body>
+	<div id="preload" hidden>
+		<img src="./img/desktop/window_header.png">
+		<img src="./img/desktop/window_border.png">
+		<img src="./img/desktop/start_menu.png">
+		<img src="./img/desktop/close.png">
+		<img src="./img/misc/explosion.png">
+		<img src="./img/bonzi/purple.webp">
+		<img src="./img/bonzi/brown.webp">
+		<img src="./img/bonzi/yellow.webp">
+		<img src="./img/bonzi/cyan.webp">
+		<img src="./img/bonzi/pink.webp">
+		<img src="./img/bonzi/black.webp">
+		<img src="./img/bonzi/red.webp">
+		<img src="./img/bonzi/gray.webp">
+		<img src="./img/bonzi/green.webp">
+		<img src="./img/bonzi/blue.webp">
+		<img src="./img/bonzi/orange.webp">
+		<audio src="./explosion.mp3"></audio>
+	</div>
+	<div id="content">
+		<div id="room_info">
+			<div>Users: <span id="usercount">???</span></div>
+			Room ID - <span id="room_id">???</span><br>
+			<span id="room_public">This room is public.</span>
+			<span id="room_private">This room is private.</span>
+			<span id="room_owner"><br>You are the owner of this room.</span>
+		</div>
+		
+		<div id="talkcard" hidden></div>
+		<div id="chat_bar">
+			<div id="chat_send">send</div>
+			<div id="start_button">+</div>
+			<input id="chat_message" type="text" placeholder="Enter a message">
+			<div id="chat_tray">
+				<div id="btn_tile" class="tray_btn"></div>
+			</div>
+		</div>
+
+
+		<div id="page_login" class="page">
+			<main id="login_readme"><a href="extra/maintenance.html">bonzi.gay is in maintenance mode. Please use bonziworld.eu instead.</a><br>
+				<a id="readme" href="readme.html" target="_blank">README</a>
+				<a href="changelog.html" target="_blank">Changelog</a>
+				<!-- <a href="https://forum.bonzi.gay" target="_blank">Forums</a> -->
+				<!-- <a href="extra" target="_blank">Extra</a> -->
+			</main> 
+			<div id="login_card" hidden>
+				<input id="login_name" type="text" placeholder="Nickname" maxlength="25">
+				<input id="login_room" type="text" placeholder="Room ID (Optional)">
+				<div id="login_go"></div>
+				<div id="login_error" hidden></div>
+			</div>
+			<div id="login_load">loading</div>
+			<div id="login_version">Version 1.6.4</div>
+		</div>
+
+		<div id="page_error" class="page" hidden>
+			<div id="error_cont" class="message_cont">
+				<img src="./img/error/logo.png"><br>
+				<br>
+				<h1>BonziWORLD.exe has encountered an error and needs to close.</h1><br>
+				Nah, but seriously there was an error and you got disconnected from the server. Chances are, your internet just died out for a brief moment or your device went to sleep. Otherwise the server just screwed up.<br>
+				<br>
+				Try and reload the page. If that doesn't work and your internet is okay, then panic. We'll probably be back up Soon&trade; though.<br>
+				<br>
+				<a href="#" onclick="window.location.reload()">Reload?</a>
+			</div>
+		</div>
+
+		<canvas id="canvas"></canvas>
+
+		<div id="chat_log_button"></div>
+		
+		<div id="chat_log" class="window" hidden>
+			<div class="window_header">
+				BonziLOG&trade;
+				<div id="chat_log_close" class="window_close"></div>
+			</div>
+			<div class="window_body">
+				<div id="chat_log_content"></div>
+			</div>
+			<div id="chat_log_resize"></div>
+		</div>
+
+		<div id="start_menu" hidden>
+			<div id="start_menu_pfp"></div>
+			<input id="start_menu_name" autocorrect="off" maxlength="25" value="Anonymous">
+			<div id="start_menu_body">
+				<div id="settings_button" class="start_menu_item">
+					<img class="start_menu_item_icon" src="/img/desktop/cp.webp">
+					<div class="start_menu_item_details">
+						<div class="start_menu_item_name">Settings</div>
+						<div class="start_menu_item_description">Configure your settings.</div>
+					</div>
+				</div>
+				<div id="image_button" class="start_menu_item" hidden>
+					<img class="start_menu_item_icon" src="/img/desktop/if.png">
+					<div class="start_menu_item_details">
+						<div class="start_menu_item_name">Upload an Image</div>
+						<div class="start_menu_item_description">Send an image into the chat.</div>
+					</div>
+				</div>
+				<div id="poll_button" class="start_menu_item">
+					<img class="start_menu_item_icon" src="/img/desktop/pl.png">
+					<div class="start_menu_item_details">
+						<div class="start_menu_item_name">Poll Creator</div>
+						<div class="start_menu_item_description">Vote on a poll.</div>
+					</div>
+				</div>
+			</div>
+			<div id="start_menu_vault"></div>
+		</div>
+
+		<div id="page_ban" class="page" hidden>
+			<div id="ban_cont" class="message_cont">
+				<img src="./img/ban/logo.png"><br>
+				<br>
+				<h1>You got banned!</h1><br>
+				<br>
+				<b>Why? </b><span id="ban_reason"></span><br>
+				<b>When is it over? </b><span id="ban_end"></span><br>
+			</div>
+		</div>
+
+		<div id="page_kick" class="page" hidden>
+			<div id="kick_cont" class="message_cont">
+				<img src="./img/ban/logo.png"><br>
+				<br>
+				<h1>You got kicked!</h1><br>
+				<br>
+				<b>Why? </b><span id="kick_reason"></span><br>
+			</div>
+		</div>
+		<div id="tooltip" style="display:none"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"module": "node20",
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"types": ["node"],
+		"strict": true
+	}
+}

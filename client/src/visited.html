@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<pre id="pre"></pre>
+<script>
+function createExpensiveColor() {
+    var color = "var(--color)";
+    for (var i = 0; i < 200; i++) {
+        color = "rgb(from oklab(from " + color + " calc(l + var(--val)) calc(a + var(--val)) calc(b + var(--val))) calc(r - 1) calc(g - 1) calc(b - 1))";
+    }
+    return color;
+}
+var sheet = new CSSStyleSheet();
+sheet.insertRule("a:visited { --color: green; color: " + createExpensiveColor() + "; }");
+sheet.insertRule("a { --color: null; }");
+document.adoptedStyleSheets.push(sheet);
+
+var baseUrl = "https://not.visited/" + Math.random();
+
+function ticks(url, cb) {
+    var a = document.createElement("a");
+    a.href = url;
+    a.innerText = url;
+    document.body.appendChild(a);
+    a.style.setProperty("--val", "0.01");
+    var t = 0;
+    var animFrame;
+    function counter() {
+        t++;
+        a.style.setProperty("--val", t / 200);
+        animFrame = requestAnimationFrame(counter);
+    }
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            counter();
+            setTimeout(function() {
+                cancelAnimationFrame(animFrame);
+                cb(t);
+            }, 1000);
+        });
+    });
+
+}
+
+var urls = [
+    "https://for.entropy",
+    "https://google.com",
+    "https://reddit.com",
+    "https://x.com",
+    "https://chatgpt.com",
+    "https://not.visted/sfiusdhgjisjgjishgihahfkdshfdshfids",
+    "https://not.visited/sdfiusdhgjisjgjishgihahfkdshfdshfids",
+    "https://not.visited/sfdsgiusdhgjisjgjishgihahfkdshfdshfids",
+    "https://not.visited/sfiussdgsdhgjisjgjishgihahfkdshfdshfids",
+    "http://erik.red",
+];
+
+function start(i) {
+    ticks(urls[i], function(t) {
+        pre.innerText += urls[i] + ": " + t + " ticks\n";
+        if (i < urls.length - 1) {
+            start(i + 1);
+        };
+    });
+}
+
+start(0)
+
+</script>
